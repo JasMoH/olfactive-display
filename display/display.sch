@@ -1,0 +1,620 @@
+EESchema Schematic File Version 4
+LIBS:display-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L jasmoh-misc-symbols:L L1
+U 1 1 5D164C59
+P 1950 2300
+F 0 "L1" H 2003 2346 50  0000 L CNN
+F 1 "L" H 2003 2255 50  0000 L CNN
+F 2 "jasmoh-footprints:buzzer_coil" H 1950 2300 50  0001 C CNN
+F 3 "~" H 1950 2300 50  0001 C CNN
+	1    1950 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2450 2450 2450
+Wire Wire Line
+	2450 2450 2450 2700
+$Comp
+L power:GND #PWR0101
+U 1 1 5D166306
+P 2450 3200
+F 0 "#PWR0101" H 2450 2950 50  0001 C CNN
+F 1 "GND" H 2455 3027 50  0000 C CNN
+F 2 "" H 2450 3200 50  0001 C CNN
+F 3 "" H 2450 3200 50  0001 C CNN
+	1    2450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3100 2450 3200
+$Comp
+L Device:D D1
+U 1 1 5D1669B6
+P 1600 2300
+F 0 "D1" H 1600 2084 50  0000 C CNN
+F 1 "D" H 1600 2175 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P5.08mm_Vertical_KathodeUp" H 1600 2300 50  0001 C CNN
+F 3 "~" H 1600 2300 50  0001 C CNN
+	1    1600 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1750 2300 1850 2300
+$Comp
+L power:VCC #PWR0102
+U 1 1 5D167627
+P 1350 2250
+F 0 "#PWR0102" H 1350 2100 50  0001 C CNN
+F 1 "VCC" H 1367 2423 50  0000 C CNN
+F 2 "" H 1350 2250 50  0001 C CNN
+F 3 "" H 1350 2250 50  0001 C CNN
+	1    1350 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2250 1350 2300
+Wire Wire Line
+	1350 2300 1450 2300
+Text GLabel 2300 1850 0    50   Input ~ 0
+US_pwr
+$Comp
+L jasmoh-misc-symbols:Reed-SPST-4Pin K1
+U 1 1 5D16FF02
+P 3600 5050
+F 0 "K1" V 3033 5050 50  0000 C CNN
+F 1 "SIP-1A05" V 3124 5050 50  0000 C CNN
+F 2 "jasmoh-footprints:SIP-Form-A-SPST-Reed" H 3950 5000 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 3600 5050 50  0001 C CNN
+	1    3600 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5D16FF08
+P 4450 5250
+F 0 "J2" H 4422 5224 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 4422 5133 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4450 5250 50  0001 C CNN
+F 3 "~" H 4450 5250 50  0001 C CNN
+	1    4450 5250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 5250 4250 5250
+$Comp
+L power:GND #PWR0103
+U 1 1 5D16FF0F
+P 4250 5550
+F 0 "#PWR0103" H 4250 5300 50  0001 C CNN
+F 1 "GND" H 4255 5377 50  0000 C CNN
+F 2 "" H 4250 5550 50  0001 C CNN
+F 3 "" H 4250 5550 50  0001 C CNN
+	1    4250 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 5350 4250 5550
+$Comp
+L Device:D D2
+U 1 1 5D16FF16
+P 3600 4400
+F 0 "D2" H 3600 4616 50  0000 C CNN
+F 1 "D" H 3600 4525 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P12.70mm_Horizontal" H 3600 4400 50  0001 C CNN
+F 3 "~" H 3600 4400 50  0001 C CNN
+	1    3600 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5D16FF1C
+P 4350 4950
+F 0 "#PWR0104" H 4350 4700 50  0001 C CNN
+F 1 "GND" H 4355 4777 50  0000 C CNN
+F 2 "" H 4350 4950 50  0001 C CNN
+F 3 "" H 4350 4950 50  0001 C CNN
+	1    4350 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4850 3900 4400
+Wire Wire Line
+	3900 4400 3750 4400
+Connection ~ 3900 4850
+Wire Wire Line
+	3450 4400 3300 4400
+Wire Wire Line
+	3300 4400 3300 4850
+Text GLabel 3150 5250 0    50   Input ~ 0
+US_pwr
+Wire Wire Line
+	3150 5250 3300 5250
+Wire Wire Line
+	2950 4850 3300 4850
+$Comp
+L power:VCC #PWR0105
+U 1 1 5D16FF31
+P 2950 4850
+F 0 "#PWR0105" H 2950 4700 50  0001 C CNN
+F 1 "VCC" H 2967 5023 50  0000 C CNN
+F 2 "" H 2950 4850 50  0001 C CNN
+F 3 "" H 2950 4850 50  0001 C CNN
+	1    2950 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 4850
+$Comp
+L power:VCC #PWR0106
+U 1 1 5D1CC95A
+P 3700 7150
+F 0 "#PWR0106" H 3700 7000 50  0001 C CNN
+F 1 "VCC" H 3717 7323 50  0000 C CNN
+F 2 "" H 3700 7150 50  0001 C CNN
+F 3 "" H 3700 7150 50  0001 C CNN
+	1    3700 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5D1CCFB4
+P 3650 6150
+F 0 "#PWR0107" H 3650 5900 50  0001 C CNN
+F 1 "GND" H 3655 5977 50  0000 C CNN
+F 2 "" H 3650 6150 50  0001 C CNN
+F 3 "" H 3650 6150 50  0001 C CNN
+	1    3650 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 6850 3300 6850
+Wire Wire Line
+	3550 6350 3300 6350
+Text GLabel 3550 6450 2    50   Input ~ 0
+channel-1
+Text GLabel 3550 6550 2    50   Input ~ 0
+channel-2
+Text GLabel 3550 6650 2    50   Input ~ 0
+channel-3
+Text GLabel 3550 6750 2    50   Input ~ 0
+channel-4
+Wire Wire Line
+	3550 6450 3300 6450
+Wire Wire Line
+	3300 6550 3550 6550
+Wire Wire Line
+	3550 6650 3300 6650
+Wire Wire Line
+	3300 6750 3550 6750
+Text GLabel 2050 4650 0    50   Input ~ 0
+channel-3
+Wire Wire Line
+	2050 4650 2650 4650
+Text GLabel 6800 4600 0    50   Input ~ 0
+channel-4
+Text GLabel 2350 1550 0    50   Input ~ 0
+channel-1
+Text GLabel 6750 1550 0    50   Input ~ 0
+channel-2
+$Comp
+L Connector_Generic:Conn_01x07 J1
+U 1 1 5D1DE93C
+P 3100 6650
+F 0 "J1" H 3018 7167 50  0000 C CNN
+F 1 "Conn_01x07" H 3018 7076 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm" H 3100 6650 50  0001 C CNN
+F 3 "~" H 3100 6650 50  0001 C CNN
+	1    3100 6650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 6950 3300 6950
+Text GLabel 3550 6850 2    50   Input ~ 0
+US-modulation
+Text GLabel 2100 2900 0    50   Input ~ 0
+US-modulation
+Wire Wire Line
+	2100 2900 2150 2900
+Wire Wire Line
+	1950 2150 2450 2150
+Wire Wire Line
+	2300 1850 2450 1850
+Wire Wire Line
+	2450 1850 2450 2150
+Wire Wire Line
+	4350 4800 4350 4950
+Wire Wire Line
+	4150 4850 4150 4400
+Wire Wire Line
+	4150 4400 4350 4400
+Wire Wire Line
+	3900 4850 4150 4850
+Wire Wire Line
+	2650 4650 2650 4050
+Wire Wire Line
+	2650 4050 4650 4050
+Wire Wire Line
+	4650 4050 4650 4600
+$Comp
+L jasmoh-misc-symbols:Reed-SPST-4Pin K4
+U 1 1 5D1FB28C
+P 8350 5000
+F 0 "K4" V 7783 5000 50  0000 C CNN
+F 1 "SIP-1A05" V 7874 5000 50  0000 C CNN
+F 2 "jasmoh-footprints:SIP-Form-A-SPST-Reed" H 8700 4950 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 8350 5000 50  0001 C CNN
+	1    8350 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J5
+U 1 1 5D1FB292
+P 9200 5200
+F 0 "J5" H 9172 5174 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 9172 5083 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9200 5200 50  0001 C CNN
+F 3 "~" H 9200 5200 50  0001 C CNN
+	1    9200 5200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 5200 9000 5200
+$Comp
+L power:GND #PWR0108
+U 1 1 5D1FB299
+P 9000 5500
+F 0 "#PWR0108" H 9000 5250 50  0001 C CNN
+F 1 "GND" H 9005 5327 50  0000 C CNN
+F 2 "" H 9000 5500 50  0001 C CNN
+F 3 "" H 9000 5500 50  0001 C CNN
+	1    9000 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 5300 9000 5500
+$Comp
+L Device:D D5
+U 1 1 5D1FB2A0
+P 8350 4350
+F 0 "D5" H 8350 4566 50  0000 C CNN
+F 1 "D" H 8350 4475 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P12.70mm_Horizontal" H 8350 4350 50  0001 C CNN
+F 3 "~" H 8350 4350 50  0001 C CNN
+	1    8350 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5D1FB2A6
+P 9100 4900
+F 0 "#PWR0109" H 9100 4650 50  0001 C CNN
+F 1 "GND" H 9105 4727 50  0000 C CNN
+F 2 "" H 9100 4900 50  0001 C CNN
+F 3 "" H 9100 4900 50  0001 C CNN
+	1    9100 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 4800 8650 4350
+Wire Wire Line
+	8650 4350 8500 4350
+Connection ~ 8650 4800
+Wire Wire Line
+	8200 4350 8050 4350
+Wire Wire Line
+	8050 4350 8050 4800
+Text GLabel 7900 5200 0    50   Input ~ 0
+US_pwr
+Wire Wire Line
+	7900 5200 8050 5200
+Wire Wire Line
+	7700 4800 8050 4800
+$Comp
+L power:VCC #PWR0110
+U 1 1 5D1FB2BA
+P 7700 4800
+F 0 "#PWR0110" H 7700 4650 50  0001 C CNN
+F 1 "VCC" H 7717 4973 50  0000 C CNN
+F 2 "" H 7700 4800 50  0001 C CNN
+F 3 "" H 7700 4800 50  0001 C CNN
+	1    7700 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 8050 4800
+Wire Wire Line
+	6800 4600 7400 4600
+Wire Wire Line
+	9100 4750 9100 4900
+Wire Wire Line
+	8900 4800 8900 4350
+Wire Wire Line
+	8900 4350 9100 4350
+Wire Wire Line
+	8650 4800 8900 4800
+Wire Wire Line
+	7400 4600 7400 4000
+Wire Wire Line
+	7400 4000 9400 4000
+Wire Wire Line
+	9400 4000 9400 4550
+$Comp
+L jasmoh-misc-symbols:Reed-SPST-4Pin K3
+U 1 1 5D200D90
+P 8300 1950
+F 0 "K3" V 7733 1950 50  0000 C CNN
+F 1 "SIP-1A05" V 7824 1950 50  0000 C CNN
+F 2 "jasmoh-footprints:SIP-Form-A-SPST-Reed" H 8650 1900 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 8300 1950 50  0001 C CNN
+	1    8300 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5D200D96
+P 9150 2150
+F 0 "J4" H 9122 2124 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 9122 2033 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9150 2150 50  0001 C CNN
+F 3 "~" H 9150 2150 50  0001 C CNN
+	1    9150 2150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2150 8950 2150
+$Comp
+L power:GND #PWR0111
+U 1 1 5D200D9D
+P 8950 2450
+F 0 "#PWR0111" H 8950 2200 50  0001 C CNN
+F 1 "GND" H 8955 2277 50  0000 C CNN
+F 2 "" H 8950 2450 50  0001 C CNN
+F 3 "" H 8950 2450 50  0001 C CNN
+	1    8950 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 2250 8950 2450
+$Comp
+L Device:D D4
+U 1 1 5D200DA4
+P 8300 1300
+F 0 "D4" H 8300 1516 50  0000 C CNN
+F 1 "D" H 8300 1425 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P12.70mm_Horizontal" H 8300 1300 50  0001 C CNN
+F 3 "~" H 8300 1300 50  0001 C CNN
+	1    8300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5D200DAA
+P 9050 1850
+F 0 "#PWR0112" H 9050 1600 50  0001 C CNN
+F 1 "GND" H 9055 1677 50  0000 C CNN
+F 2 "" H 9050 1850 50  0001 C CNN
+F 3 "" H 9050 1850 50  0001 C CNN
+	1    9050 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 1750 8600 1300
+Wire Wire Line
+	8600 1300 8450 1300
+Connection ~ 8600 1750
+Wire Wire Line
+	8150 1300 8000 1300
+Wire Wire Line
+	8000 1300 8000 1750
+Text GLabel 7850 2150 0    50   Input ~ 0
+US_pwr
+Wire Wire Line
+	7850 2150 8000 2150
+Wire Wire Line
+	7650 1750 8000 1750
+$Comp
+L power:VCC #PWR0113
+U 1 1 5D200DBE
+P 7650 1750
+F 0 "#PWR0113" H 7650 1600 50  0001 C CNN
+F 1 "VCC" H 7667 1923 50  0000 C CNN
+F 2 "" H 7650 1750 50  0001 C CNN
+F 3 "" H 7650 1750 50  0001 C CNN
+	1    7650 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 8000 1750
+Wire Wire Line
+	6750 1550 7350 1550
+Wire Wire Line
+	8850 1750 8850 1300
+Wire Wire Line
+	8850 1300 9050 1300
+Wire Wire Line
+	8600 1750 8850 1750
+Wire Wire Line
+	7350 1550 7350 950 
+Wire Wire Line
+	7350 950  9350 950 
+Wire Wire Line
+	9350 950  9350 1500
+$Comp
+L jasmoh-misc-symbols:Reed-SPST-4Pin K2
+U 1 1 5D209A9F
+P 3950 1950
+F 0 "K2" V 3383 1950 50  0000 C CNN
+F 1 "SIP-1A05" V 3474 1950 50  0000 C CNN
+F 2 "jasmoh-footprints:SIP-Form-A-SPST-Reed" H 4300 1900 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 3950 1950 50  0001 C CNN
+	1    3950 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5D209AA5
+P 4800 2150
+F 0 "J3" H 4772 2124 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 4772 2033 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4800 2150 50  0001 C CNN
+F 3 "~" H 4800 2150 50  0001 C CNN
+	1    4800 2150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2150 4600 2150
+$Comp
+L power:GND #PWR0114
+U 1 1 5D209AAC
+P 4600 2450
+F 0 "#PWR0114" H 4600 2200 50  0001 C CNN
+F 1 "GND" H 4605 2277 50  0000 C CNN
+F 2 "" H 4600 2450 50  0001 C CNN
+F 3 "" H 4600 2450 50  0001 C CNN
+	1    4600 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2250 4600 2450
+$Comp
+L Device:D D3
+U 1 1 5D209AB3
+P 3950 1300
+F 0 "D3" H 3950 1516 50  0000 C CNN
+F 1 "D" H 3950 1425 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P12.70mm_Horizontal" H 3950 1300 50  0001 C CNN
+F 3 "~" H 3950 1300 50  0001 C CNN
+	1    3950 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5D209AB9
+P 4700 1850
+F 0 "#PWR0115" H 4700 1600 50  0001 C CNN
+F 1 "GND" H 4705 1677 50  0000 C CNN
+F 2 "" H 4700 1850 50  0001 C CNN
+F 3 "" H 4700 1850 50  0001 C CNN
+	1    4700 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1750 4250 1300
+Wire Wire Line
+	4250 1300 4100 1300
+Connection ~ 4250 1750
+Wire Wire Line
+	3800 1300 3650 1300
+Wire Wire Line
+	3650 1300 3650 1750
+Wire Wire Line
+	3300 1750 3650 1750
+$Comp
+L power:VCC #PWR0116
+U 1 1 5D209ACD
+P 3300 1750
+F 0 "#PWR0116" H 3300 1600 50  0001 C CNN
+F 1 "VCC" H 3317 1923 50  0000 C CNN
+F 2 "" H 3300 1750 50  0001 C CNN
+F 3 "" H 3300 1750 50  0001 C CNN
+	1    3300 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 3650 1750
+Wire Wire Line
+	4700 1700 4700 1850
+Wire Wire Line
+	4500 1750 4500 1300
+Wire Wire Line
+	4500 1300 4700 1300
+Wire Wire Line
+	4250 1750 4500 1750
+Wire Wire Line
+	3000 1550 3000 950 
+Wire Wire Line
+	3000 950  5000 950 
+Wire Wire Line
+	5000 950  5000 1500
+Wire Wire Line
+	2350 1550 3000 1550
+Wire Wire Line
+	2450 2150 3650 2150
+Connection ~ 2450 2150
+$Comp
+L Device:Q_NMOS_SGD Q1
+U 1 1 5D20E763
+P 2350 2900
+F 0 "Q1" H 2556 2946 50  0000 L CNN
+F 1 "Q_NMOS_SGD" H 2556 2855 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 2550 3000 50  0001 C CNN
+F 3 "~" H 2350 2900 50  0001 C CNN
+	1    2350 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_SGD Q3
+U 1 1 5D210BEE
+P 4800 1500
+F 0 "Q3" H 5006 1546 50  0000 L CNN
+F 1 "Q_NMOS_SGD" H 5006 1455 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 5000 1600 50  0001 C CNN
+F 3 "~" H 4800 1500 50  0001 C CNN
+	1    4800 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_SGD Q4
+U 1 1 5D2116A9
+P 9150 1500
+F 0 "Q4" H 9356 1546 50  0000 L CNN
+F 1 "Q_NMOS_SGD" H 9356 1455 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 9350 1600 50  0001 C CNN
+F 3 "~" H 9150 1500 50  0001 C CNN
+	1    9150 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_SGD Q5
+U 1 1 5D2122E9
+P 9200 4550
+F 0 "Q5" H 9406 4596 50  0000 L CNN
+F 1 "Q_NMOS_SGD" H 9406 4505 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 9400 4650 50  0001 C CNN
+F 3 "~" H 9200 4550 50  0001 C CNN
+	1    9200 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_SGD Q2
+U 1 1 5D212E74
+P 4450 4600
+F 0 "Q2" H 4656 4646 50  0000 L CNN
+F 1 "Q_NMOS_SGD" H 4656 4555 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 4650 4700 50  0001 C CNN
+F 3 "~" H 4450 4600 50  0001 C CNN
+	1    4450 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 1700 9050 1850
+Wire Wire Line
+	3550 6350 3550 6150
+Wire Wire Line
+	3550 6150 3650 6150
+Wire Wire Line
+	3550 6950 3550 7150
+Wire Wire Line
+	3550 7150 3700 7150
+$EndSCHEMATC
